@@ -1,0 +1,10 @@
+<ul class="list-group">
+  <li class="list-group-item"><a href="#">Food</a></li>
+  <li class="list-group-item"><a href="#">Drink</a></li>
+  <button class="btn btn-secondary" routerLink="my-table/0001">My Table</button>
+  <li class="list-group-item"><a href="#">My Order</a></li>
+  <ng-template *ngIf="bIsSignedIn"><li class="list-group-item"><a href="#">My Account</a></li></ng-template>
+  <button class="btn btn-primary">Cancel Order</button>
+  <button class="btn btn-primary" *ngIf="bIsSignedIn else SignedOut" routerLink="sign-out">Sign Out</button>
+  <ng-template #SignedOut><button class="btn-secondary" routerLink="sign-in">Sign In</button></ng-template>
+</ul>
