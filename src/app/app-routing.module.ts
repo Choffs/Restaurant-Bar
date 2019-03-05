@@ -8,6 +8,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
 const routes: Routes = [
   {path: '',redirectTo:'/home',pathMatch: 'full'},
   {path: 'home',component: MenuListComponent},
+  {path: 'food',component: MenuListComponent},
+  {path: 'drink',component: MenuListComponent},
   {path: 'my-table/:table-id',component: PageContainerComponent},
   {path: 'my-account/:acc-id',component: PageContainerComponent},
   {path: 'my-order/:order-id',component: PageContainerComponent},
