@@ -1,4 +1,4 @@
-<div class="card men-obj" style="width: 300px;">
+<div class="card men-obj text-black" style="width: 300px;">
   <img class="card-img-top" [src]="Item.itemPictureUrl" style="width:300px; height: 200px;"alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">{{Item.itemName}}</h5>
@@ -8,11 +8,13 @@
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   </button>
   <div class="dropdown-menu bg-dark multi-level" aria-labelledby="dropdownMenu2">
-    <div class="dropright">
-    <button class="dropdown-item text-white hoverclr dropdown-toggle" type="button" id="dropdownMenu3">Add to Order</button>
+    <div class="dropdown-submenu">
+    <button class="dropdown-item text-white hoverclr" type="button" id="dropdownMenu3">Add to Order</button>
     <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu3">
+
+      <button class="dropdown-item text-white hoverclr" type="button">Another action</button>
     </div>
-    <button class="dropdown-item text-white hoverclr" type="button">Another action</button>
+
 
     <button class="dropdown-item text-white hoverclr" type="button">Something else here</button>
   </div>

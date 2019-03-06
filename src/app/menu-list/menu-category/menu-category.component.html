@@ -1,10 +1,9 @@
-<div class="container cat">
+<div class="container cat text-white">
   <h2>{{category}}</h2>
-  <hr>
+  <hr class="hrobj">
   <div class="row">
     <div class="col-md" *ngFor="let item of MenuItems">
       <app-menu-object [Item] = 'item'></app-menu-object>
     </div>
   </div>
 </div>
-

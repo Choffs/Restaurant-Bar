@@ -10,6 +10,7 @@ export class PromoShowcaseComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('.carousel').carousel();
   }
 
 }
