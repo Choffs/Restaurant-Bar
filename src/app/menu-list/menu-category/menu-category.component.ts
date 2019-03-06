@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { MenuItem } from '../shared/menu-item.model';
 
 @Component({
   selector: 'app-menu-category',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-category.component.css']
 })
 export class MenuCategoryComponent implements OnInit {
-  category: string = "Defualt";
+  @Input() category: string = "Defualt";
+  @Input() MenuItems: MenuItem[];
+
   constructor() { }
 
   ngOnInit() {

@@ -9,6 +9,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { PageContainerComponent } from './page-container/page-container.component';
 import { MenuCategoryComponent } from './menu-list/menu-category/menu-category.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { HeaderComponent } from './header/header.component';
+import { PromoShowcaseComponent } from './promo-showcase/promo-showcase.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SignInComponent } from './sign-in/sign-in.component';
     SidebarComponent,
     PageContainerComponent,
     MenuCategoryComponent,
-    SignInComponent
+    SignInComponent,
+    HeaderComponent,
+    PromoShowcaseComponent
   ],
   imports: [
     BrowserModule,

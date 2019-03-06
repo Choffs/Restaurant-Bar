@@ -1,3 +1,6 @@
-<div class="jumbotron">
-  <p>Hello World</p>
+<div class="jumbotron bg-dark" *ngIf="ListType === 'Food'" >
+
+<div *ngFor="let food of FoodList">
+<app-menu-category [category] = "food.category" [MenuItems] = "food.itemList" ></app-menu-category>
+</div>
 </div>
